@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block content %}
+<body>
+  <div class="border-round">
+    <h1 class="my-5">Note: {{note.title}}</h1>
+    <p>{{note.text}}</p>
+    <a href="{% url 'notes.update'  pk=note.id%}" class="btn btn-secondary">Edit</a>
+    <a href="{% url 'notes.delete'  pk=note.id%}" class="btn btn-warning">Delete</a>
+  </div>
+</body>
+{% endblock %}

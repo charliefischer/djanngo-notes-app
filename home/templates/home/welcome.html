@@ -1,0 +1,5 @@
+{% extends "base.html" %} {% block content %}
+<h1>weclome</h1>
+<p>{{ today }}</p>
+<a href="{% url 'notes.list' %}" class="btn btn-primary">Check out notes</a>
+{% endblock %}
